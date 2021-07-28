@@ -1,0 +1,14 @@
+version: '3'
+services:
+  solr:
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    image: bireme/solr:5.5.5
+    ports:
+      - "${CONTAINER_PORT}:8983"
+    env_file:
+      - .env
+    user: "${USER_GROUP_IDS}"
+    volumes:
+      - ./solr_indexes:/opt/solr/server/solr/mycores
+      - ./conf/solr.in.sh:/opt/solr/bin/solr.in.sh
