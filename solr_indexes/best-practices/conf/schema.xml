@@ -157,23 +157,23 @@
 
     <!-- common fields -->
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
-    <field name="title" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="introduction" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="objectives" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="activities" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="main_results" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="factors" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="outcome_information" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="describe_how" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="challenges_information" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="lessons_information" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="country" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="subregion" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="target" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="start_date" type="text" indexed="true" stored="true" multiValued="true"/>
-    <field name="end_date" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="title" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="introduction" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="objectives" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="activities" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="main_results" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="factors" type="text" indexed="true" stored="true" multiValued="false"/>
 
-    <field name="status" type="int" indexed="true" stored="true" multiValued="false"/>
+    <field name="outcome_information" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="describe_how" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="challenges_information" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="lessons_information" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="country" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="subregion" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="target" type="text" indexed="false" stored="true" multiValued="true"/>
+    <field name="start_date" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="end_date" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="status" type="int" indexed="false" stored="true" multiValued="false"/>
 
     <!-- dynamic field definitions -->
     <dynamicField name="*" type="text" indexed="true" stored="true" multiValued="true"/>
@@ -192,5 +192,6 @@
  <solrQueryParser defaultOperator="AND"/>
 
  <copyField source="title" dest="tw"/>
+ <copyField source="introduction" dest="tw"/>
 
 </schema>
