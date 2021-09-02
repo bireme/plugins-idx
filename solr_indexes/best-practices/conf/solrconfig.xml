@@ -448,6 +448,8 @@
          <str name="df">tw</str>
          <str name="facet">true</str>
          <str name="facet.field">country</str>
+         <str name="facet.field">subregion</str>
+         <str name="facet.field">target</str>
          <str name="facet.limit">20</str>
          <str name="facet.mincount">1</str>
      </lst>
