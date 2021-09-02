@@ -168,9 +168,9 @@
     <field name="describe_how" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="challenges_information" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="lessons_information" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="country" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="subregion" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="target" type="text" indexed="false" stored="true" multiValued="true"/>
+    <field name="country" type="string" indexed="false" stored="true" multiValued="false"/>
+    <field name="subregion" type="string" indexed="false" stored="true" multiValued="false"/>
+    <field name="target" type="string" indexed="false" stored="true" multiValued="true"/>
     <field name="start_date" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="end_date" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="status" type="int" indexed="false" stored="true" multiValued="false"/>
