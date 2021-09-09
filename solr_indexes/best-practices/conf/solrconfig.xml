@@ -450,6 +450,11 @@
          <str name="facet.field">country</str>
          <str name="facet.field">subregion</str>
          <str name="facet.field">target</str>
+         <str name="facet.field">type</str>
+         <str name="facet.field">intervention</str>
+         <str name="facet.field">population_group</str>
+         <str name="facet.field">institution</str>
+         <str name="facet.field">stakeholder</str>
          <str name="facet.limit">20</str>
          <str name="facet.mincount">1</str>
      </lst>
