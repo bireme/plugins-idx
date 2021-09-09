@@ -175,6 +175,12 @@
     <field name="end_date" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="status" type="int" indexed="false" stored="true" multiValued="false"/>
 
+    <field name="type" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="population_group" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="stakeholder" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="institution" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="intervention" type="string" indexed="true" stored="true" multiValued="true"/>
+
     <!-- dynamic field definitions -->
     <dynamicField name="*" type="text" indexed="true" stored="true" multiValued="true"/>
 
