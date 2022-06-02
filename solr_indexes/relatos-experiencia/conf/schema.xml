@@ -158,28 +158,29 @@
     <!-- common fields -->
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
     <field name="title" type="text" indexed="true" stored="true" multiValued="false"/>
-    <field name="introduction" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="notes" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="issue" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="status" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="other_status" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="objectives" type="text" indexed="true" stored="true" multiValued="false"/>
-    <field name="activities" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="resources" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="context" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="main_results" type="text" indexed="true" stored="true" multiValued="false"/>
-    <field name="factors" type="text" indexed="true" stored="true" multiValued="false"/>
-
-    <field name="outcome_information" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="describe_how" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="challenges_information" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="lessons_information" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="country" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="subregion" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="target" type="string" indexed="true" stored="true" multiValued="true"/>
-    <field name="start_date" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="end_date" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="status" type="int" indexed="false" stored="true" multiValued="false"/>
+    <field name="other_results" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="lessons_learned" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="other_medias" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="products_information" type="text" indexed="false" stored="true" multiValued="false"/>
 
-    <field name="type" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="population_group" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="stakeholder" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="institution" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="intervention" type="string" indexed="true" stored="true" multiValued="true"/>
+    <field name="start_date" type="string" indexed="false" stored="true" multiValued="false"/>
+    <field name="end_date" type="string" indexed="false" stored="true" multiValued="false"/>
+    <field name="partial_date" type="string" indexed="false" stored="true" multiValued="false"/>
+
+    <field name="keywords" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="thematic_area" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="population_group" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="other_population_group" type="text" indexed="true" stored="true" multiValued="true"/>
+
 
     <!-- dynamic field definitions -->
     <dynamicField name="*" type="text" indexed="true" stored="true" multiValued="true"/>
@@ -198,6 +199,8 @@
  <solrQueryParser defaultOperator="AND"/>
 
  <copyField source="title" dest="tw"/>
- <copyField source="introduction" dest="tw"/>
+ <copyField source="notes" dest="tw"/>
+ <copyField source="issue" dest="tw"/>
+
 
 </schema>
