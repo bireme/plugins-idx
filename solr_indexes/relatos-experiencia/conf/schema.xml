@@ -175,11 +175,12 @@
     <field name="start_date" type="string" indexed="false" stored="true" multiValued="false"/>
     <field name="end_date" type="string" indexed="false" stored="true" multiValued="false"/>
     <field name="partial_date" type="string" indexed="false" stored="true" multiValued="false"/>
+    <field name="other_date" type="string" indexed="false" stored="true" multiValued="false"/>
 
     <field name="keywords" type="text" indexed="true" stored="true" multiValued="true"/>
     <field name="thematic_area" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="population_group" type="string" indexed="true" stored="true" multiValued="true"/>
-    <field name="other_population_group" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="other_population_group" type="string" indexed="true" stored="true" multiValued="false"/>
 
 
     <!-- dynamic field definitions -->
