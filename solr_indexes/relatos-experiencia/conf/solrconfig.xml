@@ -449,6 +449,8 @@
          <str name="facet">true</str>
          <str name="facet.field">population_group</str>
          <str name="facet.field">thematic_area</str>
+         <str name="facet.field">country</str>
+         <str name="facet.field">collection</str>
          <str name="facet.limit">20</str>
          <str name="facet.mincount">1</str>
      </lst>

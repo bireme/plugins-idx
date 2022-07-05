@@ -159,6 +159,10 @@
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
     <field name="title" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="notes" type="text" indexed="true" stored="true" multiValued="false"/>
+
+    <field name="description" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="fulltext" type="text" indexed="true" stored="true" multiValued="false"/>
+
     <field name="issue" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="status" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="other_status" type="string" indexed="true" stored="true" multiValued="false"/>
@@ -167,9 +171,12 @@
     <field name="context" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="main_results" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="challenges_information" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="other_results" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="lessons_learned" type="text" indexed="false" stored="true" multiValued="false"/>
-    <field name="other_medias" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="other_results" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="other_medias" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="other_docs" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="other_videos" type="text" indexed="false" stored="true" multiValued="false"/>
+    <field name="related_links" type="text" indexed="false" stored="true" multiValued="false"/>
     <field name="products_information" type="text" indexed="false" stored="true" multiValued="false"/>
 
     <field name="start_date" type="string" indexed="false" stored="true" multiValued="false"/>
@@ -180,7 +187,13 @@
     <field name="keywords" type="text" indexed="true" stored="true" multiValued="true"/>
     <field name="thematic_area" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="population_group" type="string" indexed="true" stored="true" multiValued="true"/>
+    <field name="region" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="city" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="country" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="other_population_group" type="string" indexed="true" stored="true" multiValued="false"/>
+
+    <field name="collection" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="descriptors" type="text" indexed="true" stored="true" multiValued="true"/>
 
 
     <!-- dynamic field definitions -->
@@ -201,6 +214,8 @@
 
  <copyField source="title" dest="tw"/>
  <copyField source="notes" dest="tw"/>
+ <copyField source="description" dest="tw"/>
+ <copyField source="fulltext" dest="tw"/>
  <copyField source="issue" dest="tw"/>
 
 
