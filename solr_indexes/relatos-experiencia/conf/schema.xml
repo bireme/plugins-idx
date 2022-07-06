@@ -189,10 +189,10 @@
     <field name="population_group" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="region" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="city" type="text" indexed="true" stored="true" multiValued="false"/>
-    <field name="country" type="text" indexed="true" stored="true" multiValued="false"/>
+    <field name="country" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="other_population_group" type="string" indexed="true" stored="true" multiValued="false"/>
 
-    <field name="collection" type="text" indexed="true" stored="true" multiValued="true"/>
+    <field name="collection" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="descriptors" type="text" indexed="true" stored="true" multiValued="true"/>
 
 
