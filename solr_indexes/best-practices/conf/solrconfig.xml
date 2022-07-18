@@ -455,6 +455,7 @@
          <str name="facet.field">population_group</str>
          <str name="facet.field">institution</str>
          <str name="facet.field">stakeholder</str>
+         <str name="facet.field">outcome</str>
          <str name="facet.limit">20</str>
          <str name="facet.mincount">1</str>
      </lst>
