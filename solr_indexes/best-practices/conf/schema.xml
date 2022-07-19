@@ -176,7 +176,7 @@
     <field name="status" type="int" indexed="false" stored="true" multiValued="false"/>
 
     <field name="type" type="string" indexed="true" stored="true" multiValued="false"/>
-    <field name="outcome" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="outcomes" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="population_group" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="stakeholder" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="institution" type="string" indexed="true" stored="true" multiValued="false"/>
