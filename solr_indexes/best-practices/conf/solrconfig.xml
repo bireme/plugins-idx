@@ -456,6 +456,7 @@
          <str name="facet.field">institution</str>
          <str name="facet.field">stakeholder</str>
          <str name="facet.field">outcomes</str>
+         <str name="facet.field">call</str>
          <str name="facet.limit">20</str>
          <str name="facet.mincount">1</str>
      </lst>
