@@ -181,6 +181,7 @@
     <field name="stakeholder" type="string" indexed="true" stored="true" multiValued="true"/>
     <field name="institution" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="intervention" type="string" indexed="true" stored="true" multiValued="true"/>
+    <field name="call" type="string" indexed="true" stored="true" multiValued="false"/>
 
     <field name="entity" type="text" indexed="true" stored="true" multiValued="true"/>
     <field name="technical_matter" type="text" indexed="true" stored="true" multiValued="true"/>
