@@ -190,6 +190,8 @@
     <field name="sustainability" type="text" indexed="true" stored="true" multiValued="false"/>
     <field name="coop_modality" type="text" indexed="true" stored="true" multiValued="false"/>
 
+    <field name="is_private" type="string" indexed="true" multiValued="false"/>
+
     <!-- dynamic field definitions -->
     <dynamicField name="*" type="text" indexed="true" stored="true" multiValued="true"/>
 
